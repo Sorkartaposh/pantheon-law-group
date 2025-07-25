@@ -1,0 +1,75 @@
+/*
+========================
+GLOBAL CSS START HERE 
+========================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400px;
+    /* --color-primary: #FF5300; */
+    /* --color-secondary: #eb427e; */
+}
+
+body { 
+    font-family: "Inter", sans-serif;
+}
+
+.font-mulish {
+    font-family: "Mulish", sans-serif;
+}
+
+/* custom container */
+.container {
+    @apply mx-auto lg:max-w-[1300px] md:max-w-[1500px] sm:max-w-[1500px] px-3
+}
+
+
+/* Custom sidebar styles */
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially off-screen */
+  width: 100%;
+  max-width: 250px;
+  height: 100vh;
+  background-color: black;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out; /* Smooth transition */
+  z-index: 99;
+}
+.offcanvas.show {
+  transform: translateX(250px); /* Slide in */
+}
+.offcanvas-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 40;
+  transition: opacity 0.3s ease-in-out;
+}
+.offcanvas-backdrop.show {
+  display: block;
+  opacity: 1;
+}
+
+
+#headersticky {
+  transition: 0.7s;
+}
+
+
+

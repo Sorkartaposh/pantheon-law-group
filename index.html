@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme='dark'>
+
+<head>
+    <!-- Meta setup -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <meta name="decription" content="">
+    <meta name="designer" content="">
+
+    <!-- Title -->
+    <title>Home - The Pantheon Law Group</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="./assets/images/">
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font-awesome-icon/css/all.css">
+
+
+    <!-- Tailwind css link -->
+    <link rel="stylesheet" href="./src/output.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header id="headersticky" class=" bg-black/30 backdrop-blur-[7.5px] py-8 w-full z-2 fixed top-0">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div>
+                    <a href="#"><img class="block w-" src="./assets/images/logo/logo.svg" alt=""></a>
+                </div>
+                <!-- Desktop Nav -->
+                <div class="hidden lg:flex space-x-6">
+                    <ul class="flex items-center gap-8 text-white text-[24px] font-[500]">
+                        <li><a href="#" class="text-[#FF5300] transition-colors capitalize">Home</a></li>
+                        <li><a href="#" class="hover:text-[#FF5300] transition-colors capitalize">Services</a></li>
+                        <li><a href="#" class="hover:text-[#FF5300] transition-colors capitalize">About Us</a></li>
+                        <li><a href="#" class="hover:text-[#FF5300] transition-colors capitalize">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hamburger Icon (Mobile) -->
+                <div class="lg:hidden">
+                    <button onclick="toggleOffcanvas()" class="text-3xl text-white cursor-pointer">
+                        <i class="fas fa-bars" id="hamburger-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar here -->
+        <div id="offcanvas" class="offcanvas h-fit">
+            <button onclick="toggleOffcanvas()" class="absolute top-4 right-4 text-2xl text-white cursor-pointer">
+            <i class="fas fa-times"></i>
+            </button>
+
+            <ul class="flex flex-col items-center mt-12 space-y-6 text-white">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Offcanvas Backdrop here -->
+        <div id="offcanvas-backdrop" class="offcanvas-backdrop"></div>
+    </header>
+    <!-- Header Section End -->
+
+    <main>
+        <!-- Hero Section start -->
+        <section class="relative">
+            <video src="./assets/videos/video1.mp4" autoplay muted playsinline class="w-full h-[860px] object-cover"></video>
+            <div class="absolute top-0 z-1 w-full h-full flex flex-col items-center justify-center" style="background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 93.42%);">
+                <div class="container">
+                    <div class="w-full max-w-[1100px] mx-auto translate-y-[20%]">
+                        <h2 class="text-white text-[53.703px] font-[700] leading-[59.98px] text-center mb-4">Advanced Blockchain Intelligence for Risk Mitigation, Security, and Investigations</h2>
+                        <p class="text-white text-[17px] font-[400] leading-[120% w-full max-w-[760px] mx-auto mb-7">Move from reactive responses to proactive strategies - track fraud, uncover illicit activity, and stay ahead of emerging threats with cutting-edge blockchain analytics.</p>
+                        <button class="text-white text-[17.297px] font-[700] leading-[20px] tracking-[0.54px] rounded-[64px] bg-[#FF5300] px-7 py-5 hover:bg-white hover:text-black transition-all duration-500 cursor-pointer block mx-auto">Request a consultation</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- trusted by Section start -->
+        <section class="trustedby_area">
+            <div class="container">
+                <p class="text-white text-[20px] font-[700] leading-[21px] tracking-[1.4px] uppercase">Trusted by over 1,500 clients across the globe</p>
+            </div>
+        </section>
+        <!-- trusted by Section End -->
+    </main>
+
+
+    <!-- Custom script -->
+    <script src="./assets/js/scripts.js"></script>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>
