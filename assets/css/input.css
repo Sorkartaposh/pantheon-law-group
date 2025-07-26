@@ -10,16 +10,10 @@ GLOBAL CSS START HERE
 @import "tailwindcss";
 @plugin "daisyui";
 
-@theme {
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --breakpoint-xxl: 1400px;
-    /* --color-primary: #FF5300; */
-    /* --color-secondary: #eb427e; */
-}
 
+html,body {
+  overflow-x: hidden !important;
+}
 body { 
     font-family: "Inter", sans-serif;
 }
@@ -42,8 +36,6 @@ body {
   width: 100%;
   max-width: 250px;
   height: 100vh;
-  background-color: black;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.5s ease-in-out; /* Smooth transition */
   z-index: 99;
 }
@@ -70,6 +62,36 @@ body {
 #headersticky {
   transition: 0.7s;
 }
+.dropdown_btn:hover .dropdown_content {
+  top: 100.9px;
+  opacity: 1;
+  visibility: visible;
+}
+.slide_video {
+  position: relative;
+}
+.slide_video::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+  position: absolute;
+  top: 0;
+  left:0;
+}
+.slide_video::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+  position: absolute;
+  top: 0;
+  right:0;
+}
 
-
-
+/* primary button */
+.primary_btn {
+ @apply text-white text-[17.297px] font-[700] leading-[20px] tracking-[0.54px] rounded-[64px] bg-[#FF5300] px-7 py-5 hover:bg-white hover:text-black transition-all duration-500 cursor-pointer
+}
