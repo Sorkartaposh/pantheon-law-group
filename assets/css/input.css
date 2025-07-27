@@ -95,3 +95,6 @@ body {
 .primary_btn {
  @apply text-white text-[17.297px] font-[700] leading-[20px] tracking-[0.54px] rounded-[64px] bg-[#FF5300] px-7 py-5 hover:bg-white hover:text-black transition-all duration-500 cursor-pointer
 }
+.getStartBg {
+  background-image: url(./);
+}
