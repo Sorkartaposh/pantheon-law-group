@@ -1097,6 +1097,14 @@
   .grow {
     flex-grow: 1;
   }
+  .translate-y-\[-20px\] {
+    --tw-translate-y: -20px;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-\[-\] {
+    --tw-translate-y: -;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .translate-y-\[2px\] {
     --tw-translate-y: 2px;
     translate: var(--tw-translate-x) var(--tw-translate-y);
