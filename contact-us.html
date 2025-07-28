@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme='dark'>
+    
+<head>
+    <!-- Meta setup -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <meta name="decription" content="">
+    <meta name="designer" content="">
+
+    <!-- Title -->
+    <title>Contact us - The Pantheon Law Group</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="./assets/images/">
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font-awesome-icon/css/all.css">
+
+
+    <!-- animate css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind css link -->
+    <link rel="stylesheet" href="./src/output.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header id="headersticky" class=" bg-black/30 backdrop-blur-[7.5px] w-full z-2 fixed top-0 border-b border-white/50 py-6 lg:py-0"  data-aos="fade-down" data-aos-delay="300">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div>
+                    <a href="./index.html"><img class="block sm:w-[220px] w-[140px]" src="./assets/images/logo/logo2.png" alt=""></a>
+                </div>
+                <!-- Desktop Nav -->
+                <div class="hidden lg:flex space-x-6">
+                    <ul class="flex items-center gap-8 text-white text-[24px] font-[500] menu_wraper">
+                        <li class="py-8"><a href="./index.html" class="hover:text-[#FF5300] text-[#fff] transition-colors capitalize">Home</a></li>
+                        <li class="dropdown_btn py-8">
+                            <a class="hover:text-[#FF5300] transition-colors capitalize cursor-pointer text-[#fff]">Services <i class="fa-regular fa-angle-down translate-y-[2px]"></i></a>
+                            <div class="w-full absolute top-[130px] left-0 z-[-2] bg-black/80 backdrop-blur-[7.5px] dropdown_content transition-all duration-500 opacity-0 invisible py-20 border-b border-white/30">
+                                <div class="container">
+                                    <div class="grid lg:grid-cols-3">
+                                        <div class="px-4">
+                                            <a href="./global-asset-recovery.html" class="font-semibold block text-[#FF5300] text-[25px] mb-2">Global Services</a>
+                                            <p class="text-white text-[18px] font-[400]">Tailored, expert-led solutions to navigate crypto challenges and drive actionable results worldwide.</p>
+                                        </div>
+                                        <div class="px-4">
+                                            <a href="./cryptocurrency-dispute-resolution.html" class="font-semibold block text-[#FF5300] text-[25px] mb-2">Training & Certification</a>
+                                            <p class="text-white text-[18px] font-[400]">Equip yourself with the knowledge needed to navigate cryptocurrency confidently</p>
+                                        </div>
+                                        <div class="px-4">
+                                            <a href="./smart-contract-audits-legal-reviews.html" class="font-semibold block text-[#FF5300] text-[25px] mb-2">Chainalysis Academy </a>
+                                            <p class="text-white text-[18px] font-[400]">Get started with short training courses</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-8"><a href="./about-us.html" class="hover:text-[#FF5300] text-[#fff] transition-colors capitalize">About Us</a></li>
+                        <li class="py-8"><a href="./contact-us.html" class="hover:text-[#FF5300] text-[#FF5300] transition-colors capitalize">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hamburger Icon (Mobile) -->
+                <div class="lg:hidden">
+                    <button onclick="toggleOffcanvas()" class="text-3xl text-white cursor-pointer">
+                        <i class="fas fa-bars" id="hamburger-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar here -->
+        <div id="offcanvas" class="offcanvas h-fit bg-black/50 backdrop-blur-[7.5px]">
+            <button onclick="toggleOffcanvas()" class="absolute top-4 right-4 text-2xl text-white cursor-pointer">
+            <i class="fas fa-times"></i>
+            </button>
+
+            <ul class="flex flex-col items-center mt-12 space-y-6 text-white">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Offcanvas Backdrop here -->
+        <div id="offcanvas-backdrop" class="offcanvas-backdrop"></div>
+    </header>
+    <!-- Header Section End -->
+
+    <main class="min-h-screen bg-[#000]">
+        <!-- Hero Section start -->
+        <section class="relative pb-20">
+            <img src="./assets/images/banner/banner9.png" alt="" class="w-full object-cover sm:h-[1200px] h-[900px]">
+            <div class="absolute top-0 z-1 w-full h-full flex flex-col items-center justify-center">
+                <div class="container">
+                    <h2 class="text-white sm:text-[50px] text-[25px] font-[700] leading-[120%] text-center sm:mb-15 mb-8" data-aos="fade-up" data-aos-delay="300">Contact With Us</h2>
+                    <div class="w-full mx-auto bg-black/10 border border-white/50 backdrop-blur-[19.1px] lg:p-28 p-10 lg:px-20 px-5 sm:rounded-[30px] rounded-[10px]" data-aos="zoom-in" data-aos-delay="600">
+                        <form action="">
+                            <div class="grid lg:grid-cols-2 gap-5">
+                                <input class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white" type="text" placeholder="Full Name">
+                                <input  class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white" type="text" placeholder="Business Email Address">
+                                <select  class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent">
+                                    <option value="3">Organization Type</option>
+                                    <option value="0">item</option>
+                                    <option value="1">item</option>
+                                    <option value="2">item</option>
+                                </select>
+                                <select  class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent">
+                                    <option value="0">Solution of Interest</option>
+                                    <option value="1">item</option>
+                                    <option value="2">item</option>
+                                    <option value="3">item</option>
+                                </select>
+                            </div>
+                            <select class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent mt-5 ">
+                                <option value="0">Country</option>
+                                <option value="1">item</option>
+                                <option value="2">item</option>
+                                <option value="3">item</option>
+                            </select>
+                            <textarea class="w-full rounded-[10px] bg-black/40 h-[66px] outline-none focus:border focus:border-white border border-transparent resize-none sm:min-h-[195px] min-h-[120px] mt-5 p-5 placeholder:text-white " placeholder="Message"></textarea>
+                            <button class="text-white text-[17px] font-[700] leading-[20px] rounded-[10px] bg-[#FF5300] px-7 py-5 hover:bg-white hover:text-black transition-all duration-500 cursor-pointer block w-full sm:max-w-[300px] max-w-[150px] ml-auto mt-5">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+    </main>
+
+    <!-- footer Section Start -->
+    <footer class="bg-[#000] pt-[50px] sm:pt-[145px]">
+        <div class="container">
+            <div class="grid lg:grid-cols-2 gap-4 items-center">
+                <div data-aos-duration="800" data-aos-delay="500" data-aos="fade-right">
+                    <h2 class="text-[#293972] sm:text-[35px] text-[22px] font-[700] leading-[120%]">Subscribe to our weekly newsletter</h2>
+                </div>
+                <div data-aos-duration="800" data-aos-delay="500" data-aos="fade-left">
+                    <form action="" class="w-full max-w-[830px] flex sm:flex-row flex-col gap-2">
+                        <input class="h-[50px] w-full border border-[#BAC4D5] rounded-full px-5 outline-0" type="email" placeholder="Write email" name="email">
+                        <button type="submit" class="h-[50px] w-[185px] rounded-full bg-[#293972] text-white cursor-pointer hover:bg-[#fff] hover:text-black transition">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+                <div class="grid grid-cols-12 gap-5 mt-15">
+                    <div class="sm:col-span-3 col-span-12" data-aos-duration="800" data-aos-delay="600" data-aos="fade-right">
+                        <div>
+                            <h4 class="text-white text-[18px] font-[700] leading-[120%] uppercase mb-3">Services</h4>
+                            <ul>
+                                <li><a href="./global-asset-recovery.html" class="text-[#0038FF] text-[16.867px] font-[400] leading-[120%] block py-2 hover:text-white transition-colors duration-300">Global Asset Recovery</a></li>
+                                <li><a href="./cryptocurrency-dispute-resolution.html" class="text-[#0038FF] text-[16.867px] font-[400] leading-[120%] block py-2 hover:text-white transition-colors duration-300">Cryptocurrency Dispute Resolution</a></li>
+                                <li><a href="./smart-contract-audits-legal-reviews.html" class="text-[#0038FF] text-[16.867px] font-[400] leading-[120%] block py-2 hover:text-white transition-colors duration-300">Smart Contract Audits & Legal Reviews</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sm:col-span-3 col-span-12"  data-aos-duration="800" data-aos-delay="700" data-aos="fade-right">
+                        <div>
+                            <h4 class="text-white text-[18px] font-[700] leading-[120%] uppercase mb-3">Quick links</h4>
+                            <ul>
+                                <li><a href="./about-us.html" class="text-[#0038FF] text-[16.867px] font-[400] leading-[120%] block py-2 hover:text-white transition-colors duration-300">About Us</a></li>
+                                <li><a href="./contact-us.html" class="text-[#0038FF] text-[16.867px] font-[400] leading-[120%] block py-2 hover:text-white transition-colors duration-300">Contact Us</a></li>
+                                <li><a href="./contact-us.html" class="text-[#0038FF] text-[16.867px] font-[400] leading-[120%] block py-2 hover:text-white transition-colors duration-300">Get a Consultation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sm:col-span-6 col-span-12"  data-aos-duration="800" data-aos-delay="800" data-aos="fade-right">
+                        <p class="text-[#c4c4c4] sm:text-[18px] text-[16px] font-[400] leading-[150%] text-justify">Disclaimer: patheonrecovery Law Group provides private investigation services in the UK and EU under License Number ER185624. patheonrecovery Law Group, a wholly owned subsidiary of patheonrecovery Law Group. New clients are entitled to a complimentary consultation. Fees and commissions for fund recovery and other services will be determined based on the unique nature and complexity of each case. patheonrecovery Law Group does not provide investment, financial services, or financial advice.
+Our services are not available to residents of Iran, Iraq, Israel, Jordan, or the United States. All payments received by the company are processed securely in accordance with PCI-DSS protocols.
+At patheonrecovery Law Group, the integrity of our client communications is of paramount importance. We vigilantly address any instances of phishing or spoofing. We strongly advise recipients to authenticate emails originating from patheonrecovery Law Group by confirming their source as quantumrecoverylawgroup.com. If you receive any communication bearing our name that appears suspicious, please forward a copy to us at info@quantumrecoverylawgroup.com.</p>
+                    </div>
+                </div>
+            <div class="sm:mt-[130px] mt-10 py-11 border-t border-white/40">
+                <p class="text-[#293972] text-[15.938px] font-[400] leading-[120%] text-center">© 2025, All rights reserved to <a href="./index.html" class="text-[#0038FF] font-bold">The Pantheon Law Group</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer Section End -->
+
+
+    
+
+    <!-- animate script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom script -->
+    <script src="./assets/js/scripts.js"></script>
+ 
+
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+</body>
+
+</html>
