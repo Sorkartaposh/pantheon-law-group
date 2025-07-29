@@ -3010,6 +3010,11 @@
       font-size: 52px;
     }
   }
+  .sm\:text-\[55px\] {
+    @media (width >= 40rem) {
+      font-size: 55px;
+    }
+  }
   .md\:col-span-4 {
     @media (width >= 48rem) {
       grid-column: span 4 / span 4;
@@ -3077,6 +3082,11 @@
       grid-column: span 7 / span 7;
     }
   }
+  .lg\:mt-0 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
   .lg\:mt-\[150px\] {
     @media (width >= 64rem) {
       margin-top: 150px;
@@ -3095,6 +3105,11 @@
   .lg\:ml-auto {
     @media (width >= 64rem) {
       margin-left: auto;
+    }
+  }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
     }
   }
   .lg\:flex {
