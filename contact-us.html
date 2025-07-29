@@ -130,6 +130,7 @@
                             <div class="grid lg:grid-cols-1 gap-5">
                                 <input class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white" type="text" placeholder="Full Name" name="name" required>
                                 <input  class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white"  type="email" name="email" placeholder="Your Email Address" required>
+                                <input  class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white"  type="tel" name="phone" placeholder="Phone Number" required>
                                 <select name="service" required class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent">
                                     <option value="" hidden>Select One Service</option>
                                     <option value="Global Asset Recovery">Global Asset Recovery</option>
@@ -139,7 +140,7 @@
                             </div>
                               <!-- Honeypot Spam Protection -->
                             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                            <textarea class="w-full rounded-[10px] bg-black/40 h-[66px] outline-none focus:border focus:border-white border border-transparent resize-none sm:min-h-[195px] min-h-[120px] mt-5 p-5 placeholder:text-white " placeholder="Write your massage here..."></textarea>
+                            <textarea class="w-full rounded-[10px] bg-black/40 h-[66px] outline-none focus:border focus:border-white border border-transparent resize-none sm:min-h-[195px] min-h-[120px] mt-5 p-5 placeholder:text-white " placeholder="Write your massage here..." name="message" required></textarea>
                             <button class="text-white text-[17px] font-[700] leading-[20px] rounded-[10px] bg-[#FF5300] px-7 py-5 hover:bg-white hover:text-black transition-all duration-500 cursor-pointer block w-full mt-5" name="message" required>Submit</button>
                             <p id="successMessage" class="text-green-500 text-center mt-4 hidden text-lg">Thank you! Your message has been sent successfully.</p>
                         </form>
