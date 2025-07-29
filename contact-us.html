@@ -101,37 +101,47 @@
 
     <main class="min-h-screen bg-[#000]">
         <!-- Hero Section start -->
-        <section class="relative pb-20">
-            <img src="./assets/images/banner/banner9.png" alt="" class="w-full object-cover sm:h-[1200px] h-[900px]">
-            <div class="absolute top-0 z-1 w-full h-full flex flex-col items-center justify-center">
-                <div class="container">
+        <section class="relative pb-20 bg-no-repeat bg-center bg-cover" style="background-image: url(./assets/images/banner/banner9.png);">
+            <!-- <img src="./assets/images/banner/banner9.png" alt="" class="w-full object-cover sm:h-[1200px] h-[900px]"> -->
+            <div class="w-full h-full flex flex-col items-center justify-center">
+                <div class="container pt-52">
                     <h2 class="text-white sm:text-[50px] text-[25px] font-[700] leading-[120%] text-center sm:mb-15 mb-8" data-aos="fade-up" data-aos-delay="300">Contact Us</h2>
-                    <div class="w-full mx-auto bg-black/10 border border-white/50 backdrop-blur-[19.1px] lg:p-28 p-10 lg:px-20 px-5 sm:rounded-[30px] rounded-[10px]" data-aos="zoom-in" data-aos-delay="600">
-                        <form action="">
-                            <div class="grid lg:grid-cols-2 gap-5">
-                                <input class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white" type="text" placeholder="Full Name">
-                                <input  class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white" type="text" placeholder="Business Email Address">
-                                <select  class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent">
-                                    <option value="3">Organization Type</option>
-                                    <option value="0">item</option>
-                                    <option value="1">item</option>
-                                    <option value="2">item</option>
-                                </select>
-                                <select  class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent">
-                                    <option value="0">Solution of Interest</option>
-                                    <option value="1">item</option>
-                                    <option value="2">item</option>
-                                    <option value="3">item</option>
+                    <div class="grid lg:grid-cols-12 items-center w-full mx-auto bg-black/10 border border-white/50 backdrop-blur-[19.1px] lg:p-28 p-10 lg:px-20 px-5 sm:rounded-[30px] rounded-[10px]" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="lg:col-span-5 col-span-12">
+                            <h1 class="text-white text-[55px] font-[700] leading-[120%] mb-3">The Pantheon <br> Law Group</h1>
+                            <p class="text-white text-[16px] font-[500] leading-[120%]">You can send us emails for quick enquiry.</p>
+                            <div class="mt-14">
+                                <h4 class="text-white text-[24px] font-[700] leading-[120%] mb-4">Our Email Addresses</h4>
+                                <ul>
+                                    <li class="text-white text-[16px] font-[500] leading-[120%] mb-2.5 flex items-center gap-2.5"><img class="block w-8" src="./assets/images/icon/icon28.png" alt=""> support@pantheonlawgroup.com</li>
+                                    <li class="text-white text-[16px] font-[500] leading-[120%] mb-2.5 flex items-center gap-2.5"><img class="block w-8" src="./assets/images/icon/icon28.png" alt=""> support@pantheonlawgroup.com</li>
+                                </ul>
+                            </div>
+                            <div class="mt-14">
+                                <h4 class="text-white text-[24px] font-[700] leading-[120%] mb-4">Call our international Numbers</h4>
+                                <ul>
+                                    <li class="text-white text-[16px] font-[500] leading-[120%] mb-2.5 flex items-center gap-2.5"><img class="block w-8" src="./assets/images/icon/icon29.png" alt=""> 000 000 000 00</li>
+                                    <li class="text-white text-[16px] font-[500] leading-[120%] mb-2.5 flex items-center gap-2.5"><img class="block w-8" src="./assets/images/icon/icon29.png" alt=""> 000 000 000 00</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <form action="https://api.web3forms.com/submit" method="post" class="lg:col-span-7 col-span-12">
+                            <input type="hidden" name="access_key" value="137ab024-0765-4e35-bde2-0e2f75626350">
+                            <div class="grid lg:grid-cols-1 gap-5">
+                                <input class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white" type="text" placeholder="Full Name" name="name" required>
+                                <input  class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white"  type="email" name="email" placeholder="Your Email Address" required>
+                                <select name="service" required class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent">
+                                    <option value="" hidden>Select One Service</option>
+                                    <option value="Global Asset Recovery">Global Asset Recovery</option>
+                                    <option value="Cryptocurrency Dispute Resolution">Cryptocurrency Dispute Resolution</option>
+                                    <option value="Smart Contract Audits & Legal Reviews">Smart Contract Audits & Legal Reviews</option>
                                 </select>
                             </div>
-                            <select class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent mt-5 ">
-                                <option value="0">Country</option>
-                                <option value="1">item</option>
-                                <option value="2">item</option>
-                                <option value="3">item</option>
-                            </select>
-                            <textarea class="w-full rounded-[10px] bg-black/40 h-[66px] outline-none focus:border focus:border-white border border-transparent resize-none sm:min-h-[195px] min-h-[120px] mt-5 p-5 placeholder:text-white " placeholder="Message"></textarea>
-                            <button class="text-white text-[17px] font-[700] leading-[20px] rounded-[10px] bg-[#FF5300] px-7 py-5 hover:bg-white hover:text-black transition-all duration-500 cursor-pointer block w-full sm:max-w-[300px] max-w-[150px] ml-auto mt-5">Submit</button>
+                              <!-- Honeypot Spam Protection -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            <textarea class="w-full rounded-[10px] bg-black/40 h-[66px] outline-none focus:border focus:border-white border border-transparent resize-none sm:min-h-[195px] min-h-[120px] mt-5 p-5 placeholder:text-white " placeholder="Write your massage here..."></textarea>
+                            <button class="text-white text-[17px] font-[700] leading-[20px] rounded-[10px] bg-[#FF5300] px-7 py-5 hover:bg-white hover:text-black transition-all duration-500 cursor-pointer block w-full mt-5" name="message" required>Submit</button>
+                            <p id="successMessage" class="text-green-500 text-center mt-4 hidden text-lg">Thank you! Your message has been sent successfully.</p>
                         </form>
                     </div>
                 </div>
@@ -207,6 +217,26 @@ Nothing on this website or in our communications should be interpreted as formal
         AOS.init({
             duration: 1200,
         })
+
+        // form script 
+        document.querySelector("form").addEventListener("submit", async function (e) {
+    e.preventDefault(); // prevent default form submit
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action || "https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+    });
+
+    if (response.ok) {
+        document.getElementById("successMessage").classList.remove("hidden");
+        form.reset();
+    } else {
+        alert("Something went wrong. Please try again.");
+    }
+});
     </script>
 </body>
 
