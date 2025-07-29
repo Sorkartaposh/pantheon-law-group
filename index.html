@@ -342,6 +342,12 @@ Nothing on this website or in our communications should be interpreted as formal
         AOS.init({
             duration: 1200,
         })
+
+        // disable right click
+        document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+    alert("Right-click is disabled on this page.");
+  });
     </script>
 </body>
 
