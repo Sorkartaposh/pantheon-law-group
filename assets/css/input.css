@@ -10,6 +10,7 @@ GLOBAL CSS START HERE
 @import "tailwindcss";
 @plugin "daisyui";
 
+@custom-variant light (&:where([data-theme=light], [data-theme=light] *));
 
 html,body {
   overflow-x: hidden !important;

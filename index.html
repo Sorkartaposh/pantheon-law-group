@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" data-theme='dark'>
+<html lang="en-US" data-theme="light">
 
 <head>
     <!-- Meta setup -->
@@ -35,7 +35,7 @@
 <body>
 
     <!-- Header Section Start -->
-    <header id="headersticky" class=" bg-black/30 backdrop-blur-[7.5px] w-full z-2 fixed top-0 border-b border-white/50 py-6 lg:py-0"  data-aos="fade-down" data-aos-delay="300">
+    <header id="headersticky" class=" bg-black/30 light:bg-black/50 backdrop-blur-[7.5px] w-full z-2 fixed top-0 border-b border-white/50 py-6 lg:py-0"  data-aos="fade-down" data-aos-delay="300">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
@@ -70,10 +70,57 @@
                         <li class="py-8"><a href="./about-us.html" class="hover:text-[#FF5300] text-[#fff] transition-colors capitalize">About Us</a></li>
                         <li class="py-8"><a href="./contact-us.html" class="hover:text-[#FF5300] text-[#fff] transition-colors capitalize">Contact Us</a></li>
                     </ul>
+
+                    <!-- dark/light mode -->
+                    <label class="swap swap-rotate" >
+                        <!-- this hidden checkbox controls the state -->
+                        <input type="checkbox" value="synthwave"  id="togglemode" />
+
+                        <!-- sun icon -->
+                        <svg
+                            class="swap-off h-8 w-8 fill-[#FF5300]"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                            d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                        </svg>
+
+                        <!-- moon icon -->
+                        <svg
+                            class="swap-on h-8 w-8 fill-[#FF5300]"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                            d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                        </svg>
+                    </label>
                 </div>
 
                 <!-- Hamburger Icon (Mobile) -->
-                <div class="lg:hidden">
+                <div class="lg:hidden flex items-center gap-2.5">
+                    <!-- dark/light mode -->
+                    <label class="swap swap-rotate lg:hidden" >
+                        <!-- this hidden checkbox controls the state -->
+                        <input type="checkbox" value="synthwave"  id="togglemode" />
+
+                        <!-- sun icon -->
+                        <svg
+                            class="swap-off h-8 w-8 fill-[#FF5300]"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                            d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                        </svg>
+
+                        <!-- moon icon -->
+                        <svg
+                            class="swap-on h-8 w-8 fill-[#FF5300]"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                            d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                        </svg>
+                    </label>
                     <button onclick="toggleOffcanvas()" class="text-3xl text-white cursor-pointer">
                         <i class="fas fa-bars" id="hamburger-icon"></i>
                     </button>
@@ -99,7 +146,7 @@
     </header>
     <!-- Header Section End -->
 
-    <main class="min-h-screen bg-[#000]">
+    <main class="min-h-screen bg-[#000] light:bg-[#FFFFFF]">
         <!-- Hero Section start -->
         <section class="relative">
             <video src="./assets/videos/video1.mp4" loop autoplay muted playsinline class="w-full sm:h-[860px] h-[600px] object-cover"></video>
@@ -118,19 +165,19 @@
         <!-- trusted by Section start -->
         <section class="trustedby_area pt-20">
             <div class="container">
-                <p class="text-white text-[20px] font-[700] leading-[21px] tracking-[1.4px] uppercase text-center mb-15" data-aos="zoom-in-right">Trusted by over 1,500 clients across the globe</p>
+                <p class="text-white light:text-[#000] text-[20px] font-[700] leading-[21px] tracking-[1.4px] uppercase text-center mb-15" data-aos="zoom-in-right">Trusted by over 1,500 clients across the globe</p>
                 <div class="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-6 gap-4">
                     <div class="rounded-[12px] bg-gradient-to-b from-[rgba(18,72,229,0.3)] to-[rgba(46,66,125,0.3)] flex flex-col items-center justify-center gap-1.5 cursor-pointer transition-transform duration-400 hover:scale-[1.05] px-10 py-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="300" data-aos-delay="300">
                         <h3 class="text-[#FF5300] text-[46px] font-[700]">8/10</h3>
-                        <p class="text-white text-[17px] font-[400] text-center">Eight out of Ten top crypto exchange users turn to Pantheon Law Group to recover lost or stolen funds</p>
+                        <p class="text-white light:text-[#000] text-[17px] font-[400] text-center">Eight out of Ten top crypto exchange users turn to Pantheon Law Group to recover lost or stolen funds</p>
                     </div>
                     <div class="rounded-[12px] bg-gradient-to-b from-[rgba(18,72,229,0.3)] to-[rgba(46,66,125,0.3)] flex flex-col items-center justify-center gap-1.5 cursor-pointer transition-transform duration-400 hover:scale-[1.05] px-10 py-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="400" data-aos-delay="500">
                         <h3 class="text-[#FF5300] text-[46px] font-[700]">$6.9 billion+</h3>
-                        <p class="text-white text-[17px] font-[400] text-center">Illicit funds frozen or recovered through global law enforcement efforts supported by Pantheon Law Group's intelligence, legal strategy, and investigative expertise.</p>
+                        <p class="text-white light:text-[#000] text-[17px] font-[400] text-center">Illicit funds frozen or recovered through global law enforcement efforts supported by Pantheon Law Group's intelligence, legal strategy, and investigative expertise.</p>
                     </div>
                     <div class="rounded-[12px] bg-gradient-to-b from-[rgba(18,72,229,0.3)] to-[rgba(46,66,125,0.3)] flex flex-col items-center justify-center gap-1.5 cursor-pointer transition-transform duration-400 hover:scale-[1.05] px-10 py-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="800">
                         <h3 class="text-[#FF5300] text-[46px] font-[700]">45+</h3>
-                        <p class="text-white text-[17px] font-[400] text-center">Pantheon Law Group empowers organizations to identify financial risks, safeguard users, and uncover complex digital threats through advanced investigative insights.</p>
+                        <p class="text-white light:text-[#000] text-[17px] font-[400] text-center">Pantheon Law Group empowers organizations to identify financial risks, safeguard users, and uncover complex digital threats through advanced investigative insights.</p>
                     </div>
                 </div>
             </div>
@@ -141,13 +188,13 @@
         <section class="lg:mt-[220px] mt-[100px]">
             <div class="container">
                 <div>
-                    <h2 class="text-white lg:text-[45px] sm:text-[30px] text-[25px] font-[700] leading-[120%] mb-6 text-center w-full max-w-[740px] mx-auto"  data-aos="fade-up" data-aos-delay="300">Unlock the Power of Blockchain for Actionable Results</h2>
-                    <p class="text-[#B8B8B8] lg:text-[22px] text-[18px] font-normal leading-[120%] text-center w-full max-w-[740px] mx-auto mb-10"  data-aos="fade-up" data-aos-delay="600">Trace digital transactions to real-world entities and gain the insight you need to act with confidence.</p>
+                    <h2 class="text-white light:text-[#000] lg:text-[45px] sm:text-[30px] text-[25px] font-[700] leading-[120%] mb-6 text-center w-full max-w-[740px] mx-auto"  data-aos="fade-up" data-aos-delay="300">Unlock the Power of Blockchain for Actionable Results</h2>
+                    <p class="text-[#B8B8B8] light:text-[#000] lg:text-[22px] text-[18px] font-normal leading-[120%] text-center w-full max-w-[740px] mx-auto mb-10"  data-aos="fade-up" data-aos-delay="600">Trace digital transactions to real-world entities and gain the insight you need to act with confidence.</p>
                     <div class="slide_video"  data-aos="zoom-in" data-aos-delay="800">
                         <video autoplay loop src="./assets/videos/video-slide.mp4"></video>
                     </div>
                     <button class="btn bg-transparent mx-auto block mt-[60px] sm:h-[55px] h-[50px]
-                    rounded-full text-[#0038FF] border border-white hover:bg-white hover:text-black font-bold sm:text-[17px] text-[14px]" data-aos="flip-left" data-aos-delay="600" onclick="window.location.href='./about-us.html'">About Pantheon Law Group</button>
+                    rounded-full text-[#0038FF] light:text-[#000] border border-white light:border-[#000] hover:bg-white light:hover:bg-[#000] hover:text-black light:hover:text-[#fff] font-bold sm:text-[17px] text-[14px]" data-aos="flip-left" data-aos-delay="600" onclick="window.location.href='./about-us.html'">About Pantheon Law Group</button>
                 </div>
             </div>
         </section>
@@ -158,8 +205,8 @@
             <div class="container">
                 <div class="grid lg:grid-cols-2 items-center mb-20">
                     <div data-aos-duration="800" data-aos-delay="500" data-aos="fade-right">
-                        <h3 class="text-white text-[31.5px] font-[700] leading-[120%] mb-5">Disrupt Illicit Networks and Trace Blockchain Activity with Precision</h3>
-                        <p class="text-[#005EFF] text-[17px] font-[400] leading-[120%]"> At Pantheon Law Group, we go beyond tracing suspicious transactions — we dismantle fraud at its source. Our experts track the full lifecycle of illicit funds across blockchains, uncover hidden connections, and identify real-world perpetrators. We specialize in destabilizing and liquidating malicious smart contracts, unlocking assets frozen by fraudulent entities, and acting against flagged wallets. From cross-chain investigations to Web3 intelligence, we provide the tools and legal strategy to expose threats and recover stolen assets.</p>
+                        <h3 class="text-white light:text-black text-[31.5px] font-[700] leading-[120%] mb-5">Disrupt Illicit Networks and Trace Blockchain Activity with Precision</h3>
+                        <p class="text-[#005EFF] light:text-[#000] text-[17px] font-[400] leading-[120%]"> At Pantheon Law Group, we go beyond tracing suspicious transactions — we dismantle fraud at its source. Our experts track the full lifecycle of illicit funds across blockchains, uncover hidden connections, and identify real-world perpetrators. We specialize in destabilizing and liquidating malicious smart contracts, unlocking assets frozen by fraudulent entities, and acting against flagged wallets. From cross-chain investigations to Web3 intelligence, we provide the tools and legal strategy to expose threats and recover stolen assets.</p>
                     </div>
                     <div data-aos-duration="800" data-aos-delay="800" data-aos="zoom-out-left">
                         <img class="block w-full max-w-[530px] lg:ml-auto mx-auto" src="./assets/images/thumb/thumb1.png" alt="">
@@ -170,14 +217,14 @@
                         <img class="block w-full max-w-[460px] lg:ml-0 mx-auto" src="./assets/images/thumb/thumb3.png" alt="">
                     </div>
                     <div class="order-1 lg:order-2" data-aos-duration="800" data-aos-delay="500" data-aos="fade-left">
-                        <h3 class="text-white text-[31.5px] font-[700] leading-[120%] mb-5">Proactively Safeguard Your Platform from Risky Activity</h3>
-                        <p class="text-[#005EFF] text-[17px] font-[400] leading-[120%]"> Pantheon Law Group helps you monitor blockchain activity in real time, detect suspicious behavior, and reduce exposure to high-risk assets. Customize risk thresholds, evaluate incoming and outgoing transactions, and investigate abnormal user activity to maintain a secure and compliant environment.</p>
+                        <h3 class="text-white light:text-black text-[31.5px] font-[700] leading-[120%] mb-5">Proactively Safeguard Your Platform from Risky Activity</h3>
+                        <p class="text-[#005EFF] light:text-[#000] text-[17px] font-[400] leading-[120%]"> Pantheon Law Group helps you monitor blockchain activity in real time, detect suspicious behavior, and reduce exposure to high-risk assets. Customize risk thresholds, evaluate incoming and outgoing transactions, and investigate abnormal user activity to maintain a secure and compliant environment.</p>
                     </div>
                 </div>
                 <div class="grid lg:grid-cols-2 items-center mb-20">
                     <div data-aos-duration="800" data-aos-delay="500" data-aos="fade-right">
-                        <h3 class="text-white text-[31.5px] font-[700] leading-[120%] mb-5">Integrate Smart Contracts and Evaluate Fraud Risk in Real Time</h3>
-                        <p class="text-[#005EFF] text-[17px] font-[400] leading-[120%]"> Pantheon Law Group leverages advanced blockchain analytics to assess fraud scores, monitor wallet behavior, and identify malicious patterns. By integrating with smart contracts and Chainalysis-grade intelligence systems, we help uncover hidden risks across wallets, tokens, and decentralized applications - enabling proactive action and secure asset recovery.</p>
+                        <h3 class="text-white light:text-black text-[31.5px] font-[700] leading-[120%] mb-5">Integrate Smart Contracts and Evaluate Fraud Risk in Real Time</h3>
+                        <p class="text-[#005EFF] light:text-[#000] text-[17px] font-[400] leading-[120%]"> Pantheon Law Group leverages advanced blockchain analytics to assess fraud scores, monitor wallet behavior, and identify malicious patterns. By integrating with smart contracts and Chainalysis-grade intelligence systems, we help uncover hidden risks across wallets, tokens, and decentralized applications - enabling proactive action and secure asset recovery.</p>
                     </div>
                     <div data-aos-duration="800" data-aos-delay="800" data-aos="zoom-out-left">
                         <img class="block w-full max-w-[505px] lg:ml-auto mx-auto" src="./assets/images/thumb/thumb2.png" alt="">
@@ -185,14 +232,15 @@
                 </div>
                 <div class="grid lg:grid-cols-2 items-center">
                     <div class="order-2 lg:order-1" data-aos-duration="800" data-aos-delay="800" data-aos="zoom-out-right">
-                        <img class="block w-full max-w-[590px] lg:ml-0 mx-auto" src="./assets/images/thumb/thumb4.png" alt="">
+                        <img class="block light:hidden dark:block w-full max-w-[590px] lg:ml-0 mx-auto" src="./assets/images/thumb/thumb4.png" alt="">
+                        <img class="block dark:hidden light:block w-full max-w-[590px] lg:ml-0 mx-auto" src="./assets/images/thumb/thumb4-light.png" alt="">
                     </div>
                     <div class="order-1 lg:order-2" data-aos-duration="800" data-aos-delay="500" data-aos="fade-left">
-                        <h3 class="text-white text-[31.5px] font-[700] leading-[120%] mb-5">Fortify Your Web3 Ecosystem Against Threats</h3>
-                        <p class="text-[#005EFF] text-[17px] font-[400] leading-[120%]"> Pantheon Law Group delivers robust, intelligence-driven protection to defend against cyber exploits, scams, and financial vulnerabilities. Whether you're managing a protocol, blockchain network, asset fund, or exchange, our advanced security strategies help safeguard your operations and digital assets.</p>
+                        <h3 class="text-white light:text-black text-[31.5px] font-[700] leading-[120%] mb-5">Fortify Your Web3 Ecosystem Against Threats</h3>
+                        <p class="text-[#005EFF] light:text-[#000] text-[17px] font-[400] leading-[120%]"> Pantheon Law Group delivers robust, intelligence-driven protection to defend against cyber exploits, scams, and financial vulnerabilities. Whether you're managing a protocol, blockchain network, asset fund, or exchange, our advanced security strategies help safeguard your operations and digital assets.</p>
                         <div class="grid grid-cols-2 gap-5 mt-5">
-                            <button class="btn bg-transparent mx-auto block sm:h-[55px] h-[50px] rounded-full text-[#0038FF] border border-white hover:bg-white hover:text-black font-bold sm:text-[17px] text-[14px] w-full" onclick="window.location.href='./contact-us.html'">Book a Consultation</button>
-                            <button class="btn bg-transparent mx-auto block sm:h-[55px] h-[50px] rounded-full text-[#0038FF] border border-white hover:bg-white hover:text-black font-bold sm:text-[17px] text-[14px] w-full" onclick="window.location.href='./global-asset-recovery.html'">Explore Our Services</button>
+                            <button class="btn bg-transparent mx-auto block sm:h-[55px] h-[50px] rounded-full text-[#0038FF] light:text-black light:border-black light:hover:bg-black light:hover:text-white border border-white hover:bg-white hover:text-black font-bold sm:text-[17px] text-[14px] w-full" onclick="window.location.href='./contact-us.html'">Book a Consultation</button>
+                            <button class="btn bg-transparent mx-auto block sm:h-[55px] h-[50px] rounded-full text-[#0038FF] border border-white hover:bg-white hover:text-black font-bold sm:text-[17px] text-[14px] w-full light:text-black light:border-black light:hover:bg-black light:hover:text-white" onclick="window.location.href='./global-asset-recovery.html'">Explore Our Services</button>
                         </div>
                     </div>
                 </div>
@@ -202,14 +250,14 @@
 
         <!-- identify lead Section start -->
         <section class="mt-[80px] lg:mt-[150px] pb-20">
-            <div class="container bg-[#0E1117] rounded-[12px]" data-aos-duration="800" data-aos-delay="500" data-aos="fade-up">
+            <div class="container bg-[#0E1117] light:bg-[#E1E8F6] rounded-[12px]" data-aos-duration="800" data-aos-delay="500" data-aos="fade-up">
                 <div class="flex items-center justify-center sm:flex-row flex-col gap-15 min-h-[420px]">
                     <div>
                         <img src="./assets/images/thumb/thumb5.png" alt="">
                     </div>
                     <div class="w-full max-w-[500px]">
-                        <h3 class="text-white text-[31.5px] font-[700] leading-[120%] mb-4">Identify leads, generate insights, and make strategic decisions</h3>
-                        <p class="text-[#5376F3] text-[17px] font-[400] leading-[120%]">Build bespoke analyses and alerting with the industry’s most trusted blockchain intelligence to generate new leads and take action on data-driven insights to advance your mission.</p>
+                        <h3 class="text-white light:text-black text-[31.5px] font-[700] leading-[120%] mb-4">Identify leads, generate insights, and make strategic decisions</h3>
+                        <p class="text-[#5376F3] light:text-black text-[17px] font-[400] leading-[120%]">Build bespoke analyses and alerting with the industry’s most trusted blockchain intelligence to generate new leads and take action on data-driven insights to advance your mission.</p>
                     </div>
                 </div>
             </div>
@@ -293,7 +341,7 @@
                             <h2 class="text-[#293972] sm:text-[35px] text-[18px] font-[700] leading-[120%]
                             mb-4">Subscribe to our weekly newsletter</h2>
                             <form action="" class="w-full max-w-[830px] flex sm:flex-row flex-col gap-2">
-                                <input class="h-[50px] w-full border border-[#BAC4D5] rounded-full px-5 outline-0" type="email" placeholder="Write email" name="email">
+                                <input class="h-[50px] w-full border border-[#BAC4D5] text-white rounded-full px-5 outline-0" type="email" placeholder="Write email" name="email">
                                 <button type="submit" class="h-[50px] w-[185px] rounded-full bg-[#293972] text-white cursor-pointer hover:bg-[#fff] hover:text-black transition">Subscribe</button>
                             </form>
                         </div>
@@ -329,10 +377,12 @@ Nothing on this website or in our communications should be interpreted as formal
         })
 
         // disable right click
-        document.addEventListener('contextmenu', function (e) {
-    e.preventDefault();
-    alert("Right-click is disabled on this page.");
-  });
+//         document.addEventListener('contextmenu', function (e) {
+//     e.preventDefault();
+//     alert("Right-click is disabled on this page.");
+//   });
+
+  
     </script>
 </body>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" data-theme='dark'>
+<html lang="en-US" data-theme='light'>
 
 <head>
     <!-- Meta setup -->
@@ -35,19 +35,19 @@
 <body>
 
     <!-- Header Section Start -->
-    <header id="headersticky" class=" bg-black/30 backdrop-blur-[7.5px] w-full z-2 fixed top-0 border-b border-white/50 py-6 lg:py-0"  data-aos="fade-down" data-aos-delay="300">
+    <header id="headersticky" class=" bg-black/30 light:bg-black/50 backdrop-blur-[7.5px] w-full z-2 fixed top-0 border-b border-white/50 py-6 lg:py-0"  data-aos="fade-down" data-aos-delay="300">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div>
-                    <a href="./index.html"><img class="block sm:w-[220px] w-[140px]" src="./assets/images/logo/logo2.png" alt=""></a>
+                    <a href="#"><img class="block sm:w-[220px] w-[140px]" src="./assets/images/logo/logo2.png" alt=""></a>
                 </div>
                 <!-- Desktop Nav -->
                 <div class="hidden lg:flex space-x-6">
                     <ul class="flex items-center gap-8 text-white text-[24px] font-[500] menu_wraper">
                         <li class="py-8"><a href="./index.html" class="hover:text-[#FF5300] text-[#fff] transition-colors capitalize">Home</a></li>
                         <li class="dropdown_btn py-8">
-                            <a class="hover:text-[#FF5300] transition-colors capitalize cursor-pointer text-[#FF5300]">Services <i class="fa-regular fa-angle-down translate-y-[2px]"></i></a>
+                            <a class="hover:text-[#FF5300] transition-colors capitalize cursor-pointer text-[#fff]">Services <i class="fa-regular fa-angle-down translate-y-[2px]"></i></a>
                             <div class="w-full absolute top-[130px] left-0 z-[-2] bg-black/80 backdrop-blur-[7.5px] dropdown_content transition-all duration-500 opacity-0 invisible py-20 border-b border-white/30">
                                 <div class="container">
                                     <div class="grid lg:grid-cols-3">
@@ -67,13 +67,60 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="py-8"><a href="./about-us.html" class="hover:text-[#FF5300] text-[#fff] transition-colors capitalize">About Us</a></li>
+                        <li class="py-8"><a href="./about-us.html" class="hover:text-[#FF5300] text-[#FF5300] transition-colors capitalize">About Us</a></li>
                         <li class="py-8"><a href="./contact-us.html" class="hover:text-[#FF5300] text-[#fff] transition-colors capitalize">Contact Us</a></li>
                     </ul>
+
+                    <!-- dark/light mode -->
+                    <label class="swap swap-rotate" >
+                        <!-- this hidden checkbox controls the state -->
+                        <input type="checkbox" value="synthwave"  id="togglemode" />
+
+                        <!-- sun icon -->
+                        <svg
+                            class="swap-off h-8 w-8 fill-[#FF5300]"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                            d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                        </svg>
+
+                        <!-- moon icon -->
+                        <svg
+                            class="swap-on h-8 w-8 fill-[#FF5300]"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                            d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                        </svg>
+                    </label>
                 </div>
 
                 <!-- Hamburger Icon (Mobile) -->
-                <div class="lg:hidden">
+                <div class="lg:hidden flex items-center gap-2.5">
+                    <!-- dark/light mode -->
+                    <label class="swap swap-rotate lg:hidden" >
+                        <!-- this hidden checkbox controls the state -->
+                        <input type="checkbox" value="synthwave"  id="togglemode" />
+
+                        <!-- sun icon -->
+                        <svg
+                            class="swap-off h-8 w-8 fill-[#FF5300]"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                            d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                        </svg>
+
+                        <!-- moon icon -->
+                        <svg
+                            class="swap-on h-8 w-8 fill-[#FF5300]"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                            d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                        </svg>
+                    </label>
                     <button onclick="toggleOffcanvas()" class="text-3xl text-white cursor-pointer">
                         <i class="fas fa-bars" id="hamburger-icon"></i>
                     </button>
@@ -87,10 +134,10 @@
             </button>
 
             <ul class="flex flex-col items-center mt-12 space-y-6 text-white">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-us.html">About</a></li>
+                <li><a href="./global-asset-recovery.html">Services</a></li>
+                <li><a href="./contact-us.html">Contact</a></li>
             </ul>
         </div>
 
@@ -99,7 +146,7 @@
     </header>
     <!-- Header Section End -->
 
-    <main class="min-h-screen bg-[#000]">
+    <main class="min-h-screen bg-[#000] light:bg-[#fff]">
         <!-- Hero Section start -->
         <section class="relative">
             <img src="./assets/images/banner/banner1.png" alt="" class="w-full object-cover sm:h-[895px] h-[700px]">
@@ -121,21 +168,21 @@
         <section class="sm:pt-20 pt-10">
             <div class="container">
                 <div class=" text-white font-sans py-10 md:px-16 space-y-5">
-                    <h2 class="text-center text-[#0038FF] text-2xl md:text-3xl font-bold mb-6" data-aos-duration="800" data-aos-delay="100" data-aos="fade-right">HOW OUR PROCESS WORKS</h2>
+                    <h2 class="text-center text-[#0038FF] light:text-black text-2xl md:text-3xl font-bold mb-6" data-aos-duration="800" data-aos-delay="100" data-aos="fade-right">HOW OUR PROCESS WORKS</h2>
 
                     <!-- content -->
-                    <div class="bg-[#161820] rounded-lg p-6 hover:bg-[#233884] transition" data-aos-duration="800" data-aos-delay="200" data-aos="fade-right">
-                        <h3 class="text-white text-xl font-semibold mb-2">Client Identification & Allocation Phase</h3>
-                        <p class="text-white text-sm leading-relaxed mb-1.5">
+                    <div class="bg-[#161820] rounded-lg p-6 hover:bg-[#233884] transition text-white hover:text-white light:text-black light:bg-[#B9C8F1]" data-aos-duration="800" data-aos-delay="200" data-aos="fade-right">
+                        <h3 class="text-xl font-semibold mb-2">Client Identification & Allocation Phase</h3>
+                        <p class="text-sm leading-relaxed mb-1.5">
                         Through law enforcement partnerships, whistleblower reports, and blockchain intelligence platforms, we identify individuals and entities potentially affected by fraudulent activities. Once an asset pool is being evaluated for redistribution, affected users are contacted and invited to participate in the recovery process.
                         </p>
                     </div>
 
                     <!-- content -->
-                    <div class="bg-[#161820] rounded-lg p-6 hover:bg-[#233884] transition" data-aos-duration="800" data-aos-delay="300" data-aos="fade-right">
-                        <h3 class="text-white text-xl font-semibold mb-2">Data-Driven Case Assessment</h3>
-                        <p class="text-white text-sm leading-relaxed mb-1.5"> Each case is assessed through a combination of legal analysis and blockchain forensics. This includes:</p>
-                        <ul class="list-disc list-inside text-sm space-y-1 text-[#cccccc]">
+                    <div class="bg-[#161820] rounded-lg p-6 hover:bg-[#233884] transition text-white hover:text-white light:text-black light:bg-[#B9C8F1]" data-aos-duration="800" data-aos-delay="300" data-aos="fade-right">
+                        <h3 class="text-xl font-semibold mb-2">Data-Driven Case Assessment</h3>
+                        <p class="text-sm leading-relaxed mb-1.5"> Each case is assessed through a combination of legal analysis and blockchain forensics. This includes:</p>
+                        <ul class="list-disc list-inside text-sm space-y-1">
                         <li><strong>Detailed Trading History Review</strong> – We examine wallet and exchange activity to build a timeline of events and validate ownership or victim status.</li>
                         <li><strong>Fraud Risk Scoring</strong> – Using sophisticated analytics tools, we assess the associated wallets and counterparties for fraud indicators and exposure levels.</li>
                         <li><strong>Fund Flow Analysis</strong> – Our experts trace the movement of assets across multiple chains, centralized exchanges, DeFi platforms, and high-risk wallets.</li>
@@ -143,10 +190,10 @@
                     </div>
 
                     <!-- content -->
-                    <div class="bg-[#161820] rounded-lg p-6 hover:bg-[#233884] transition" data-aos-duration="800" data-aos-delay="400" data-aos="fade-right">
-                        <h3 class="text-white text-xl font-semibold mb-2">Smart Contract & Wallet Investigation</h3>
-                        <p class="text-white text-sm leading-relaxed mb-1.5">  or cases involving smart contracts (e.g., frozen assets, rug pulls, or exploited protocols), we:</p>
-                        <ul class="list-disc list-inside text-sm space-y-1 text-[#cccccc]">
+                    <div class="bg-[#161820] rounded-lg p-6 hover:bg-[#233884] transition text-white hover:text-white light:text-black light:bg-[#B9C8F1]" data-aos-duration="800" data-aos-delay="400" data-aos="fade-right">
+                        <h3 class="text-xl font-semibold mb-2">Smart Contract & Wallet Investigation</h3>
+                        <p class="text-sm leading-relaxed mb-1.5">  or cases involving smart contracts (e.g., frozen assets, rug pulls, or exploited protocols), we:</p>
+                        <ul class="list-disc list-inside text-sm space-y-1">
                         <li>Analyze the smart contract code for vulnerabilities or malicious behavior.</li>
                         <li>Coordinate efforts to destabilize or dissolve fraudulent contracts through legal channels or white-hat intervention.</li>
                         <li>Trace linked wallet addresses and entity ownership, especially if flagged or blacklisted by exchanges or blockchain monitoring tools.</li>
@@ -154,10 +201,10 @@
                     </div>
 
                     <!-- content -->
-                    <div class="bg-[#161820] rounded-lg p-6 hover:bg-[#233884] transition" data-aos-duration="800" data-aos-delay="500" data-aos="fade-right">
-                        <h3 class="text-white text-xl font-semibold mb-2">Legal Certification & Exchange Reintroduction</h3>
-                        <p class="text-white text-sm leading-relaxed mb-1.5">  Once recovery is validated, we provide clients with the necessary legal documentation and certifications that:</p>
-                        <ul class="list-disc list-inside text-sm space-y-1 text-[#cccccc]">
+                    <div class="bg-[#161820] rounded-lg p-6 hover:bg-[#233884] transition text-white hover:text-white light:text-black light:bg-[#B9C8F1]" data-aos-duration="800" data-aos-delay="500" data-aos="fade-right">
+                        <h3 class="text-xl font-semibold mb-2">Legal Certification & Exchange Reintroduction</h3>
+                        <p class="text-sm leading-relaxed mb-1.5">  Once recovery is validated, we provide clients with the necessary legal documentation and certifications that:</p>
+                        <ul class="list-disc list-inside text-sm space-y-1">
                         <li>Establish rightful ownership of the recovered funds.</li>
                         <li>Certify the source of funds as part of compliance (eGlobal Asset Recovery, Tailored to Complex Crypto Cases).</li>
                         <li>Our expert-led team delivers precise, results-driven asset recovery services for individuals, businesses, and institutions affected by fraud, scams, or unlawful asset misappropriation – regardless of jurisdiction.</li>
@@ -166,10 +213,10 @@
                     </div>
 
                     <!-- content -->
-                    <div class="bg-[#161820] rounded-lg p-6 hover:bg-[#233884] transition" data-aos-duration="800" data-aos-delay="600" data-aos="fade-right">
-                        <h3 class="text-white text-xl font-semibold mb-2">Ongoing Support & Risk Advisory</h3>
-                        <p class="text-white text-sm leading-relaxed mb-1.5"> We continue to support clients post-recovery with:</p>
-                        <ul class="list-disc list-inside text-sm space-y-1 text-[#cccccc]">
+                    <div class="bg-[#161820] rounded-lg p-6 hover:bg-[#233884] transition text-white hover:text-white light:text-black light:bg-[#B9C8F1]" data-aos-duration="800" data-aos-delay="600" data-aos="fade-right">
+                        <h3 class="text-xl font-semibold mb-2">Ongoing Support & Risk Advisory</h3>
+                        <p class="text-sm leading-relaxed mb-1.5"> We continue to support clients post-recovery with:</p>
+                        <ul class="list-disc list-inside text-sm space-y-1">
                         <li>Wallet monitoring and risk alerts.</li>
                         <li>Preventive education and advisory to avoid future incidents.</li>
                         <li>Legal recourse options in cases involving known perpetrators.</li>
@@ -185,50 +232,50 @@
         <section class="sm:pt-20 pt-10">
             <div class="container">
                 <div>
-                    <h2 class="text-white lg:text-[45px] sm:text-[30px] text-[25px] font-[700] leading-[120%] mb-6 text-center w-full max-w-[740px] mx-auto" data-aos="fade-up" data-aos-delay="300">Why Choose <span class="text-[#0038FF]">Pantheon Law Group?</span></h2>
-                    <p class="text-[#FFFFFF] lg:text-[20px] text-[18px] font-normal leading-[120%] text-center w-full max-w-[740px] mx-auto mb-10 font-mulish" data-aos="fade-up" data-aos-delay="600">From fraudulent exchanges and hacked wallets to deceptive smart contracts and illicit cross-chain transfers, we are committed to helping you recover what's rightfully yours - with integrity, precision, and unwavering legal support.</p>
+                    <h2 class="text-white light:text-black lg:text-[45px] sm:text-[30px] text-[25px] font-[700] leading-[120%] mb-6 text-center w-full max-w-[740px] mx-auto" data-aos="fade-up" data-aos-delay="300">Why Choose <span class="text-[#0038FF]">Pantheon Law Group?</span></h2>
+                    <p class="text-[#FFFFFF] light:text-black lg:text-[20px] text-[18px] font-normal leading-[120%] text-center w-full max-w-[740px] mx-auto mb-10 font-mulish" data-aos="fade-up" data-aos-delay="600">From fraudulent exchanges and hacked wallets to deceptive smart contracts and illicit cross-chain transfers, we are committed to helping you recover what's rightfully yours - with integrity, precision, and unwavering legal support.</p>
                 </div>
                 <div class="grid lg:grid-cols-2 gap-5">
-                    <div class="rounded-[15px] bg-[#161820] sm:p-[40px] p-[30px] flex sm:flex-row flex-col items-start gap-3" data-aos-duration="800" data-aos-delay="400" data-aos="fade-right">
+                    <div class="rounded-[15px] bg-[#161820] sm:p-[40px] p-[30px] flex sm:flex-row flex-col items-start gap-3 light:text-black light:bg-[#B9C8F1] text-white" data-aos-duration="800" data-aos-delay="400" data-aos="fade-right">
                         <img class="sm:w-[70px] w-[40px] h-auto block" src="./assets/images/icon/icon1.png" alt="">
                         <div>
-                            <h5 class="text-white sm:text-[20px] text-[18px] font-[700] leading-relaxed">UK GDPR-Compliant Data Handling</h5>
-                            <p class="text-[#8D8D8D] sm:text-[18px] text-[16px] font-[400] leading-relaxed">Full compliance with international privacy standards</p>
+                            <h5 class="sm:text-[20px] text-[18px] font-[700] leading-relaxed">UK GDPR-Compliant Data Handling</h5>
+                            <p class="text-[#8D8D8D] light:text-black sm:text-[18px] text-[16px] font-[400] leading-relaxed">Full compliance with international privacy standards</p>
                         </div>
                     </div>
-                    <div class="rounded-[15px] bg-[#161820] sm:p-[40px] p-[30px] flex sm:flex-row flex-col items-start gap-3"  data-aos-duration="800" data-aos-delay="500" data-aos="fade-right">
+                    <div class="rounded-[15px] bg-[#161820] sm:p-[40px] p-[30px] flex sm:flex-row flex-col items-start gap-3 light:text-black light:bg-[#B9C8F1] text-white"  data-aos-duration="800" data-aos-delay="500" data-aos="fade-right">
                         <img class="sm:w-[70px] w-[40px] h-auto block" src="./assets/images/icon/icon1.png" alt="">
                         <div>
-                            <h5 class="text-white sm:text-[20px] text-[18px] font-[700] leading-relaxed">Specialists in Smart Contract & Blockchain Forensics</h5>
-                            <p class="text-[#8D8D8D] sm:text-[18px] text-[16px] font-[400] leading-relaxed">Deep technical expertise in cryptocurrency investigations</p>
+                            <h5 class="sm:text-[20px] text-[18px] font-[700] leading-relaxed">Specialists in Smart Contract & Blockchain Forensics</h5>
+                            <p class="text-[#8D8D8D] light:text-black sm:text-[18px] text-[16px] font-[400] leading-relaxed">Deep technical expertise in cryptocurrency investigations</p>
                         </div>
                     </div>
-                    <div class="rounded-[15px] bg-[#161820] sm:p-[40px] p-[30px] flex sm:flex-row flex-col items-start gap-3"  data-aos-duration="800" data-aos-delay="600" data-aos="fade-right">
+                    <div class="rounded-[15px] bg-[#161820] sm:p-[40px] p-[30px] flex sm:flex-row flex-col items-start gap-3 light:text-black light:bg-[#B9C8F1] text-white"  data-aos-duration="800" data-aos-delay="600" data-aos="fade-right">
                         <img class="sm:w-[70px] w-[40px] h-auto block" src="./assets/images/icon/icon1.png" alt="">
                         <div>
-                            <h5 class="text-white sm:text-[20px] text-[18px] font-[700] leading-relaxed">Comprehensive Asset Tracing Across Multiple Chains</h5>
-                            <p class="text-[#8D8D8D] sm:text-[18px] text-[16px] font-[400] leading-relaxed">Multi-platform tracking across all major blockchains</p>
+                            <h5 class="sm:text-[20px] text-[18px] font-[700] leading-relaxed">Comprehensive Asset Tracing Across Multiple Chains</h5>
+                            <p class="text-[#8D8D8D] light:text-black sm:text-[18px] text-[16px] font-[400] leading-relaxed">Multi-platform tracking across all major blockchains</p>
                         </div>
                     </div>
-                    <div class="rounded-[15px] bg-[#161820] sm:p-[40px] p-[30px] flex sm:flex-row flex-col items-start gap-3"  data-aos-duration="800" data-aos-delay="700" data-aos="fade-right">
+                    <div class="rounded-[15px] bg-[#161820] sm:p-[40px] p-[30px] flex sm:flex-row flex-col items-start gap-3 light:text-black light:bg-[#B9C8F1] text-white"  data-aos-duration="800" data-aos-delay="700" data-aos="fade-right">
                         <img class="sm:w-[70px] w-[40px] h-auto block" src="./assets/images/icon/icon1.png" alt="">
                         <div>
-                            <h5 class="text-white sm:text-[20px] text-[18px] font-[700] leading-relaxed">Provision of Legal Certificates to Facilitate Asset Recovery</h5>
-                            <p class="text-[#8D8D8D] sm:text-[18px] text-[16px] font-[400] leading-relaxed">Official documentation for compliance and ownership</p>
+                            <h5 class="sm:text-[20px] text-[18px] font-[700] leading-relaxed">Provision of Legal Certificates to Facilitate Asset Recovery</h5>
+                            <p class="text-[#8D8D8D] light:text-black sm:text-[18px] text-[16px] font-[400] leading-relaxed">Official documentation for compliance and ownership</p>
                         </div>
                     </div>
-                    <div class="rounded-[15px] bg-[#161820] sm:p-[40px] p-[30px] flex sm:flex-row flex-col items-start gap-3"  data-aos-duration="800" data-aos-delay="800" data-aos="fade-right">
+                    <div class="rounded-[15px] bg-[#161820] sm:p-[40px] p-[30px] flex sm:flex-row flex-col items-start gap-3 light:text-black light:bg-[#B9C8F1] text-white"  data-aos-duration="800" data-aos-delay="800" data-aos="fade-right">
                         <img class="sm:w-[70px] w-[40px] h-auto block" src="./assets/images/icon/icon1.png" alt="">
                         <div>
-                            <h5 class="text-white sm:text-[20px] text-[18px] font-[700] leading-relaxed">Close Coordination with Investigative Partners</h5>
-                            <p class="text-[#8D8D8D] sm:text-[18px] text-[16px] font-[400] leading-relaxed">Strong relationships with law enforcement and regulators</p>
+                            <h5 class="sm:text-[20px] text-[18px] font-[700] leading-relaxed">Close Coordination with Investigative Partners</h5>
+                            <p class="text-[#8D8D8D] light:text-black sm:text-[18px] text-[16px] font-[400] leading-relaxed">Strong relationships with law enforcement and regulators</p>
                         </div>
                     </div>
-                    <div class="rounded-[15px] bg-[#161820] sm:p-[40px] p-[30px] flex sm:flex-row flex-col items-start gap-3"  data-aos-duration="800" data-aos-delay="800" data-aos="fade-right">
+                    <div class="rounded-[15px] bg-[#161820] sm:p-[40px] p-[30px] flex sm:flex-row flex-col items-start gap-3 light:text-black light:bg-[#B9C8F1] text-white"  data-aos-duration="800" data-aos-delay="800" data-aos="fade-right">
                         <img class="sm:w-[70px] w-[40px] h-auto block" src="./assets/images/icon/icon1.png" alt="">
                         <div>
-                            <h5 class="text-white sm:text-[20px] text-[18px] font-[700] leading-relaxed">Dedicated Legal Advocacy to Protect Your Interests Throughout the Recovery Process</h5>
-                            <p class="text-[#8D8D8D] sm:text-[18px] text-[16px] font-[400] leading-relaxed">Victim of a crypto scam or unauthorized transfer? Our legal team partners with investigators to trace assets and pursue your recovery, every step of the way.</p>
+                            <h5 class="sm:text-[20px] text-[18px] font-[700] leading-relaxed">Dedicated Legal Advocacy to Protect Your Interests Throughout the Recovery Process</h5>
+                            <p class="text-[#8D8D8D] light:text-black sm:text-[18px] text-[16px] font-[400] leading-relaxed">Victim of a crypto scam or unauthorized transfer? Our legal team partners with investigators to trace assets and pursue your recovery, every step of the way.</p>
                         </div>
                     </div>
                 </div>
@@ -238,14 +285,14 @@
 
         <!-- ready recover Section start -->
         <section class="py-[70px] sm:py-[170px]">
-            <div class="container">
-                <div class="w-full rounded-[15px] bg-gradient-to-r from-[#010B1F] to-[#122149] px-4 sm:py-16 py-8 text-center">
-                    <h2 class="text-white text-[35px] md:text-[65px] font-bold mb-4 font-mulish leading-[110%]">Ready to Recover Your Assets?</h2>
-                    <p class="text-[#A3A3A3] text-base md:text-lg mb-6">
+            <div class="container"  data-aos-duration="800" data-aos-delay="400" data-aos="fade-up">
+                <div class="w-full rounded-[15px] bg-gradient-to-r from-[#010B1F] to-[#122149] light:bg-gradient-to-r light:from-[#B9C8F1] light:to-[#B9C8F1] px-4 sm:py-16 py-8 text-center">
+                    <h2 class="text-white light:text-black text-[35px] md:text-[65px] font-bold mb-4 font-mulish leading-[110%]">Ready to Recover Your Assets?</h2>
+                    <p class="text-[#A3A3A3] light:text-black text-base md:text-lg mb-6">
                         Our expert team is standing by to assess your case and begin the recovery process. <br class="hidden md:block">
                         Get started with a comprehensive consultation today.
                     </p>
-                    <button class="text-white text-[17.297px] font-[700] leading-[20px] tracking-[0.54px] rounded-[64px] bg-[#FF5300] px-7 py-5 hover:bg-white hover:text-black transition-all duration-500 cursor-pointer block mx-auto" onclick="window.location.href='./contact-us.html'">
+                    <button class="text-white text-[17.297px] font-[700] leading-[20px] tracking-[0.54px] rounded-[64px] bg-[#FF5300] px-7 py-5 hover:bg-white hover:text-black light:hover:bg-black light:hover:text-white transition-all duration-500 cursor-pointer block mx-auto" onclick="window.location.href='./contact-us.html'">
                         Request a consultation
                     </button>
                 </div>
