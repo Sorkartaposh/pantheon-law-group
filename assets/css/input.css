@@ -10,8 +10,8 @@ GLOBAL CSS START HERE
 @import "tailwindcss";
 @plugin "daisyui";
 @theme {
-  --background-image-contactusbgdark: url('/assets/images/banner/banner9.png');
-  --background-image-contactusbglight: url('/assets/images/banner/banner9-light.png');
+  --background-image-contactusbgdark: url('../assets/images/banner/banner9.png');
+  --background-image-contactusbglight: url('../assets/images/banner/banner9-light.png');
   --background-image-homebgdark: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 95%);
   --background-image-homebglight: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 60%);
 }
