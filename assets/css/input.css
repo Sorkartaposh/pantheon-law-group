@@ -9,6 +9,12 @@ GLOBAL CSS START HERE
 
 @import "tailwindcss";
 @plugin "daisyui";
+@theme {
+  --background-image-contactusbgdark: url('/assets/images/banner/banner9.png');
+  --background-image-contactusbglight: url('/assets/images/banner/banner9-light.png');
+  --background-image-homebgdark: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 95%);
+  --background-image-homebglight: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 60%);
+}
 
 @custom-variant light (&:where([data-theme=light], [data-theme=light] *));
 
@@ -68,34 +74,47 @@ body {
   opacity: 1;
   visibility: visible;
 }
-.slide_video {
+
+.slide_overlay {
   position: relative;
 }
-.slide_video::before {
+.slide_overlay::before {
   content: "";
   display: block;
-  width: 200px;
+  width: 10%;
   height: 100%;
-  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0.00) 0%, #fff 100%);
   position: absolute;
   top: 0;
   left:0;
+  z-index: 5;
 }
-.slide_video::after {
+.slide_overlay::after {
   content: "";
   display: block;
-  width: 200px;
+  width: 10%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #fff 100%);
   position: absolute;
   top: 0;
   right:0;
+  z-index: 5;
+}
+
+/* Dark mode overrides using data-theme attribute */
+html[data-theme='dark'] .slide_overlay::before {
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+}
+
+html[data-theme='dark'] .slide_overlay::after {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
 }
 
 /* primary button */
 .primary_btn {
  @apply text-white text-[17.297px] font-[700] leading-[20px] tracking-[0.54px] rounded-[64px] bg-[#FF5300] px-7 py-5 hover:bg-white hover:text-black transition-all duration-500 cursor-pointer
 }
-.getStartBg {
-  background-image: url(./);
+
+.splide__arrow,.splide__pagination {
+  display: none;
 }

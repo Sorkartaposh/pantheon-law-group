@@ -148,7 +148,7 @@
 
     <main class="min-h-screen bg-[#000]">
         <!-- Hero Section start -->
-        <section class="relative pb-20 bg-no-repeat bg-center bg-cover bg-[url(../assets/images/banner/banner9-light.png)]">
+        <section class="relative pb-20 bg-no-repeat bg-center bg-cover  light:bg-contactusbglight bg-contactusbgdark">
             <!-- <img src="./assets/images/banner/banner9.png" alt="" class="w-full object-cover sm:h-[1200px] h-[900px]"> -->
             <div class="w-full h-full flex flex-col items-center justify-center">
                 <div class="container pt-52">
@@ -174,9 +174,9 @@
                         <form action="https://api.web3forms.com/submit" method="post" class="lg:col-span-7 col-span-12 mt-10 lg:mt-0">
                             <input type="hidden" name="access_key" value="137ab024-0765-4e35-bde2-0e2f75626350">
                             <div class="grid lg:grid-cols-1 gap-5">
-                                <input class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white" type="text" placeholder="Full Name" name="name" required>
-                                <input  class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white"  type="email" name="email" placeholder="Your Email Address" required>
-                                <input  class="w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white"  type="tel" name="phone" placeholder="Phone Number" required>
+                                <input class="w-full rounded-[10px] text-white bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white" type="text" placeholder="Full Name" name="name" required>
+                                <input  class="w-full rounded-[10px] text-white bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white"  type="email" name="email" placeholder="Your Email Address" required>
+                                <input  class="w-full rounded-[10px] text-white bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent placeholder:text-white"  type="tel" name="phone" placeholder="Phone Number" required>
                                 <select name="service" required class="text-white w-full rounded-[10px] bg-black/40 h-[66px] px-3 outline-none focus:border focus:border-white border border-transparent">
                                     <option value="" hidden>Select One Service</option>
                                     <option value="Global Asset Recovery">Global Asset Recovery</option>
@@ -186,7 +186,7 @@
                             </div>
                               <!-- Honeypot Spam Protection -->
                             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                            <textarea class="w-full rounded-[10px] bg-black/40 h-[66px] outline-none focus:border focus:border-white border border-transparent resize-none sm:min-h-[195px] min-h-[120px] mt-5 p-5 placeholder:text-white " placeholder="Write your massage here..." name="message" required></textarea>
+                            <textarea class="w-full rounded-[10px] text-white bg-black/40 h-[66px] outline-none focus:border focus:border-white border border-transparent resize-none sm:min-h-[195px] min-h-[120px] mt-5 p-5 placeholder:text-white " placeholder="Write your massage here..." name="message" required></textarea>
                             <button class="text-white text-[17px] font-[700] leading-[20px] rounded-[10px] bg-[#FF5300] px-7 py-5 hover:bg-white hover:text-black transition-all duration-500 cursor-pointer block w-full mt-5" name="message" required>Submit</button>
                             <p id="successMessage" class="text-green-500 text-center mt-4 hidden text-lg">Thank you! Your message has been sent successfully.</p>
                         </form>

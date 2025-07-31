@@ -23,12 +23,10 @@
 
     <!-- animate css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/css/splide.min.css'>
 
     <!-- Tailwind css link -->
     <link rel="stylesheet" href="./src/output.css">
-
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="./assets/css/responsive.css">
 
 </head>
 
@@ -150,7 +148,7 @@
         <!-- Hero Section start -->
         <section class="relative">
             <video src="./assets/videos/video1.mp4" loop autoplay muted playsinline class="w-full sm:h-[860px] h-[600px] object-cover"></video>
-            <div class="absolute top-0 z-1 w-full h-full flex flex-col items-center justify-center" style="background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 93.42%);">
+            <div class="absolute top-0 z-1 w-full h-full flex flex-col items-center justify-center bg-homebgdark light:bg-homebglight">
                 <div class="container">
                     <div class="w-full max-w-[1100px] mx-auto translate-y-[20%]">
                         <h2 class="text-white sm:text-[50px] text-[25px] font-[700] leading-[120%] text-center mb-4" data-aos="fade-up" data-aos-delay="300">Advanced Blockchain Intelligence for Risk Mitigation, Security, and Investigations</h2>
@@ -190,11 +188,76 @@
                 <div>
                     <h2 class="text-white light:text-[#000] lg:text-[45px] sm:text-[30px] text-[25px] font-[700] leading-[120%] mb-6 text-center w-full max-w-[740px] mx-auto"  data-aos="fade-up" data-aos-delay="300">Unlock the Power of Blockchain for Actionable Results</h2>
                     <p class="text-[#B8B8B8] light:text-[#000] lg:text-[22px] text-[18px] font-normal leading-[120%] text-center w-full max-w-[740px] mx-auto mb-10"  data-aos="fade-up" data-aos-delay="600">Trace digital transactions to real-world entities and gain the insight you need to act with confidence.</p>
-                    <div class="slide_video"  data-aos="zoom-in" data-aos-delay="800">
-                        <video autoplay loop src="./assets/videos/video-slide.mp4"></video>
+                    <div class="slide_overlay w-full max-w-[1250px] mx-auto">
+                        <!-- RTL Slider -->
+                        <div class="splide slider-rtl mb-3">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img class="light:hidden block" src="./assets/images/brand/brand1.png" alt="">
+                                        <img class="light:block hidden" src="./assets/images/brand/brand1-dark.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="light:hidden block" src="./assets/images/brand/brand2.png" alt="">
+                                        <img class="light:block hidden" src="./assets/images/brand/brand2-dark.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="light:hidden block" src="./assets/images/brand/brand3.png" alt="">
+                                        <img class="light:block hidden" src="./assets/images/brand/brand3-dark.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="light:hidden block" src="./assets/images/brand/brand4.png" alt="">
+                                        <img class="light:block hidden" src="./assets/images/brand/brand4-dark.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- LTR Slider -->
+                        <div class="splide slider-ltr  mb-3">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img class="light:hidden block" src="./assets/images/brand/brand5.png" alt="">
+                                        <img class="light:block hidden" src="./assets/images/brand/brand5-dark.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="light:hidden block" src="./assets/images/brand/brand6.png" alt="">
+                                        <img class="light:block hidden" src="./assets/images/brand/brand6-dark.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="light:hidden block" src="./assets/images/brand/brand7.png" alt="">
+                                        <img class="light:block hidden" src="./assets/images/brand/brand7-dark.png" alt="">
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- RTL Slider -->
+                        <div class="splide slider-rtl-2  mb-3">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img class="light:hidden block" src="./assets/images/brand/brand8.png" alt="">
+                                        <img class="light:block hidden" src="./assets/images/brand/brand8-dark.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="light:hidden block" src="./assets/images/brand/brand9.png" alt="">
+                                        <img class="light:block hidden" src="./assets/images/brand/brand9-dark.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="light:hidden block" src="./assets/images/brand/brand10.png" alt="">
+                                        <img class="light:block hidden" src="./assets/images/brand/brand10-dark.png" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="light:hidden block" src="./assets/images/brand/brand11.png" alt="">
+                                        <img class="light:block hidden" src="./assets/images/brand/brand11-dark.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <button class="btn bg-transparent mx-auto block mt-[60px] sm:h-[55px] h-[50px]
-                    rounded-full text-[#0038FF] light:text-[#000] border border-white light:border-[#000] hover:bg-white light:hover:bg-[#000] hover:text-black light:hover:text-[#fff] font-bold sm:text-[17px] text-[14px]" data-aos="flip-left" data-aos-delay="600" onclick="window.location.href='./about-us.html'">About Pantheon Law Group</button>
+                    rounded-full text-[#0038FF] light:text-[#000] border border-white light:border-[#000] hover:bg-white light:hover:bg-[#000] hover:text-black light:hover:text-[#fff] font-bold sm:text-[17px] text-[14px]"  onclick="window.location.href='./about-us.html'">About Pantheon Law Group</button>
                 </div>
             </div>
         </section>
@@ -367,6 +430,10 @@ Nothing on this website or in our communications should be interpreted as formal
     <!-- animate script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- splide js -->
+    <script src='./assets/js/splide.min.js'></script>
+    <script src='./assets/js/splide-extension-auto-scroll.min.js'></script>
+
     <!-- Custom script -->
     <script src="./assets/js/scripts.js"></script>
  
@@ -382,7 +449,42 @@ Nothing on this website or in our communications should be interpreted as formal
 //     alert("Right-click is disabled on this page.");
 //   });
 
-  
+ document.addEventListener('DOMContentLoaded', function () {
+  const settings = {
+    type: 'loop',
+    perPage: 6,
+    focus: 'center',
+    gap: 10,
+    autoScroll: {
+      speed: 0.5,
+      pauseOnHover: false, // ✅ this line makes sure hover doesn’t pause
+    },
+    breakpoints: {
+      1024: {
+        perPage: 4,
+      },
+      640: {
+        perPage: 2,
+      },
+    },
+  };
+
+  new Splide('.slider-rtl', {
+    ...settings,
+    direction: 'rtl',
+  }).mount(window.splide.Extensions);
+
+  new Splide('.slider-ltr', {
+    ...settings,
+    direction: 'ltr',
+  }).mount(window.splide.Extensions);
+
+  new Splide('.slider-rtl-2', {
+    ...settings,
+    direction: 'rtl',
+  }).mount(window.splide.Extensions);
+});
+
     </script>
 </body>
 
